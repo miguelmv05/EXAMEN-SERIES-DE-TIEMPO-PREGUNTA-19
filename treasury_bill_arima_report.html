@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Treasury Bill ARIMA Analysis Report</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+  h1, h2, h3 { color: #2F4F4F; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+  th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+  th { background-color: #f2f2f2; }
+  img { max-width: 100%; height: auto; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<h1>Treasury Bill ARIMA Analysis Report</h1>
+
+<h2>1. Data Overview</h2>
+<p>Data was extracted from the uploaded Excel file (Table 22.7). The user selected the following columns:</p>
+<ul>
+  <li><strong>TB3M:</strong> [INSERT TB3M COLUMN NAME]</li>
+  <li><strong>TB6M:</strong> [INSERT TB6M COLUMN NAME]</li>
+</ul>
+
+<h2>2. Unit Root Tests</h2>
+<p>Stationarity tests (ADF and KPSS) were performed on both series.</p>
+<h3>2.1 TB3M</h3>
+<p>[INSERT TB3M ADF AND KPSS SUMMARY TABLE]</p>
+
+<h3>2.2 TB6M</h3>
+<p>[INSERT TB6M ADF AND KPSS SUMMARY TABLE]</p>
+
+<h2>3. Correlograms (ACF & PACF)</h2>
+<h3>3.1 TB3M Correlogram</h3>
+<img src="[INSERT TB3M_CORRELOGRAM_IMAGE]" alt="TB3M Correlogram">
+
+<h3>3.2 TB6M Correlogram</h3>
+<img src="[INSERT TB6M_CORRELOGRAM_IMAGE]" alt="TB6M Correlogram">
+
+<h2>4. ARIMA Model Selection</h2>
+<p>Best ARIMA models were identified based on AIC minimization.</p>
+<ul>
+  <li><strong>TB3M:</strong> Order (p,d,q) = [INSERT TB3M ORDER], AIC = [INSERT TB3M AIC]</li>
+  <li><strong>TB6M:</strong> Order (p,d,q) = [INSERT TB6M ORDER], AIC = [INSERT TB6M AIC]</li>
+</ul>
+
+<h2>5. Historical Data & Differenced Series</h2>
+<h3>5.1 Original Treasury Bill Rates</h3>
+<img src="[INSERT ORIGINAL_SERIES_IMAGE]" alt="Original Series">
+
+<h3>5.2 Differenced Series</h3>
+<img src="[INSERT DIFFERENCED_SERIES_IMAGE]" alt="Differenced Series">
+
+<h2>6. Forecasting</h2>
+<h3>6.1 TB3M Forecast</h3>
+<img src="[INSERT TB3M_FORECAST_IMAGE]" alt="TB3M Forecast">
+<p>[INSERT TB3M FORECAST INTERPRETATION]</p>
+
+<h3>6.2 TB6M Forecast</h3>
+<img src="[INSERT TB6M_FORECAST_IMAGE]" alt="TB6M Forecast">
+<p>[INSERT TB6M FORECAST INTERPRETATION]</p>
+
+<h2>7. Forecast Values</h2>
+<h3>7.1 TB3M Next 5 Periods</h3>
+<p>[INSERT TB3M FORECAST VALUES]</p>
+
+<h3>7.2 TB6M Next 5 Periods</h3>
+<p>[INSERT TB6M FORECAST VALUES]</p>
+
+</body>
+</html>
